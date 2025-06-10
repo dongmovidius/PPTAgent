@@ -3,7 +3,8 @@
   📄 <a href="https://arxiv.org/abs/2501.03936" target="_blank">Paper</a> &nbsp; | &nbsp;
   🤗 <a href="https://huggingface.co/datasets/Forceless/Zenodo10K" target="_blank">Dataset</a> &nbsp; | &nbsp;
   📝 <a href="./DOC.md" target="_blank">Documentation</a> &nbsp; | &nbsp;
-  🙏 <a href="#citation-" target="_blank">Citation</a>
+  🙏 <a href="#citation-" target="_blank">Citation</a> &nbsp; | &nbsp;
+  <a href="https://deepwiki.com/icip-cas/PPTAgent" target="_blank"><img src="https://deepwiki.com/icon.png" alt="Ask DeepWiki"> DeepWiki</a>
 </p>
 
 We present PPTAgent, an innovative system that automatically generates presentations from documents. Drawing inspiration from human presentation creation methods, our system employs a two-step process to ensure excellence in overall quality. Additionally, we introduce **PPTEval**, a comprehensive evaluation framework that assesses presentations across multiple dimensions.
@@ -92,13 +93,6 @@ The workflow of PPTEval is shown below:
 <img src="resource/fig3.jpg" alt="PPTEval Workflow" style="width:70%;"/>
 </p>
 
-## Contributing 🤝
-So you want to contribute? Yay! 🎉
-
-This project is actively maintained! We welcome:
-- Issues: Bug reports, feature requests, and questions
-- Pull Requests: Code improvements, documentation updates, and fixes
-- Discussions: Share your ideas and experiences
 
 ## Citation 🙏
 

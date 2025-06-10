@@ -9,17 +9,20 @@ This documentation provides an overview of the project structure, setup instruct
 
 Table of Contents
 =================
-- [Documentation 📝](#documentation-)
 - [Table of Contents](#table-of-contents)
   - [Quick Start 🚀](#quick-start-)
-    - [Recommendations and Requirements](#recommendations-and-requirements)
+    - [Recommendations and Requirements 🔬](#recommendations-and-requirements-)
     - [Docker 🐳](#docker-)
-    - [Running Locally 🛠](#running-locally-)
+    - [Running Locally 💻](#running-locally-)
       - [Installation Guide](#installation-guide)
       - [Usage](#usage)
         - [Generate Via WebUI](#generate-via-webui)
         - [Generate Via Code](#generate-via-code)
   - [Project Structure 📂](#project-structure-)
+  - [Further Step ☝️](#further-step-️)
+    - [Best Practice 💪](#best-practice-)
+    - [Contributing 💛](#contributing-)
+    - [Experimental Reproduction 🧪](#experimental-reproduction-)
 
 ## Quick Start 🚀
 
@@ -28,7 +31,7 @@ For a quick test, use the example in `runs/pdf(pptx)/*/source.pdf(pptx)` to save
 > [!NOTE]
 > When using a remote server, ensure both ports `8088` and `9297` are forwarded.
 
-### Recommendations and Requirements
+### Recommendations and Requirements 🔬
 
 <table>
   <thead>
@@ -39,11 +42,14 @@ For a quick test, use the example in `runs/pdf(pptx)/*/source.pdf(pptx)` to save
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2"><b>LLM Recommendations</b></td>
-      <td>Language Model: 70B+ non-reasoning model (Qwen2.5-72B-Instruct), for generation tasks.</td>
+      <td rowspan="3"><b>LLM Recommendations</b></td>
+      <td>Language Model: 70B+ parameters (Qwen2.5-72B-Instruct, reasoning models are not recommended)</td>
     </tr>
     <tr>
-      <td>Vision Model: 7B+ parameters (Qwen2-VL-7B-Instruct), for captioning tasks.</td>
+      <td>Vision Model: 7B+ parameters (Qwen2-VL-7B-Instruct)</td>
+    </tr>
+    <tr>
+      <td>Text Embedding Model: text-embedding-3-small/bge-m3 or other models</td>
     </tr>
     <tr>
       <td rowspan="3"><b>System Requirements</b></td>
@@ -57,6 +63,8 @@ For a quick test, use the example in `runs/pdf(pptx)/*/source.pdf(pptx)` to save
     </tr>
   </tbody>
 </table>
+
+Some recommended templates are available in the [templates](resource/templates/) directory, and you can also refer to [Best Practice](BESTPRACTICE.md) for more details.
 
 ### Docker 🐳
 
@@ -84,7 +92,7 @@ See docker log for more running details:
 docker logs -f pptagent
 ```
 
-### Running Locally 🛠
+### Running Locally 💻
 
 #### Installation Guide
 
@@ -149,3 +157,22 @@ PPTAgent/
 ├── roles/                          # Role definitions in PPTAgent
 ├── prompts/                        # Project prompts
 ```
+
+## Further Step ☝️
+
+### Best Practice 💪
+
+See [BESTPRACTICE.md](BESTPRACTICE.md) for more details.
+
+### Contributing 💛
+
+So you want to contribute? Yay!
+
+This project is actively maintained! We welcome:
+- Issues: Bug reports, feature requests, and questions
+- Pull Requests: Code improvements, documentation updates, and fixes
+- Discussions: Share your ideas and experiences
+
+### Experimental Reproduction 🧪
+
+See [experiment](https://github.com/icip-cas/PPTAgent/tree/experiment) branch for reproducing experiments and evaluation results.
